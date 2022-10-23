@@ -1,4 +1,4 @@
-##### Part 1 Answers
+# Part 1 Answers
 
-# 1) 20
-# 2) 20
+1) 20
+2) 20
