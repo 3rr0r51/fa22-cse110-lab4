@@ -17,3 +17,7 @@ NOTE: discounted.push(finalPrice) just appends final Price to the end of the arr
 
 6) ERROR: discountedPrice is not defined
 Again, same concept as Q5, discountedPrice is now block-scoped so using it in line 13 is out of scope.
+
+7) 150.  This line prints because the variable its calling (finalPrice) is within scope. Yes. It does have a let declaration, but both the declaration and the print function are withing the same block scope. (In this case, it's the function scope). 
+
+8) [ 50, 100, 150 ]   In the end, modifying scope does not affect the function's algorithm and so it behaves exactly like Q4 states.
