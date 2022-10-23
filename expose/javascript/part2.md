@@ -7,3 +7,6 @@ NOTE: This is a variable that's declared in the for loop, but since it has funct
 2) Printed 150. This was the calculated discounted price from the last loop of the for loop. Again, it has function scope, so we can still read it outside the loop. Discounted price is effectively just the discount applied to the original price.
 
 3) Printed 150. Same concept of scope and loop as Q2, but finalPrice is different from discountedPrice. While discountedPrice has the discount applied, finalPrice takes that value and rounds it to the nearest penny.
+
+4) This function will return an array of all the prices with the discount applied to them (and rounded to the nearest cent). 
+NOTE: discounted.push(finalPrice) just appends final Price to the end of the array

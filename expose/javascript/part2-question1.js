@@ -11,9 +11,9 @@ function discountedPrices(prices, discount){
 
     //console.log(i);
     //console.log(discountedPrice);
-    console.log(finalPrice);
+    //console.log(finalPrice);
 
     return discounted;
 }
 
-discountedPrices([100, 200, 300], 0.5);
+console.log (discountedPrices([100, 200, 300], 0.5));
