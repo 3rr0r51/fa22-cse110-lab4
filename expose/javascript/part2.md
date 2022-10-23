@@ -12,5 +12,8 @@ NOTE: This is a variable that's declared in the for loop, but since it has funct
 NOTE: discounted.push(finalPrice) just appends final Price to the end of the array
 
 
-5)ERROR: i is not defined.
+5) ERROR: i is not defined.
  Because we are now using the block-scoped let declaration. The scope of i is now bounded to within the for loop. So it's out of bound now.
+
+6) ERROR: discountedPrice is not defined
+Again, same concept as Q5, discountedPrice is now block-scoped so using it in line 13 is out of scope.
