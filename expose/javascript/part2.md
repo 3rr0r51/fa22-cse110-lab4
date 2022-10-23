@@ -21,3 +21,12 @@ Again, same concept as Q5, discountedPrice is now block-scoped so using it in li
 7) 150.  This line prints because the variable its calling (finalPrice) is within scope. Yes. It does have a let declaration, but both the declaration and the print function are withing the same block scope. (In this case, it's the function scope). 
 
 8) [ 50, 100, 150 ]   In the end, modifying scope does not affect the function's algorithm and so it behaves exactly like Q4 states.
+
+
+9) ERROR: i is not defined.    Same logic as Q5, the print function calls a variable that is out of scope because i is block scoped and bound to within the for loop.
+
+10) 3.  While block scoped, the scope of "length" is function scope. The print fuction is in the same block as the variable. (and function scope).
+
+11) Yes, but because we modified the code from previous versions. The important part here is that that array (discounted) is somehow allowed to change despite being a const. Everything else works as normal. (We took out finalPrice because that wouldn't work). Note that line 7 isn't affected when we switched to const because its final value is defined there at the same time(line?) as its declaration. After the for loop ends, we delete it and create a new one for the next loop. This effectively circumnavigates the "no edit" rule.
+
+Now onto discounted. The part that doesn't change is its REFERENCE to the array object. (References are kinda like pointers). We can edit the object itself, but we can't edit the variable's reference to it.  For example, if we did disounted = [];  on line 5, this wouldn't work because we're giving it a new reference.
