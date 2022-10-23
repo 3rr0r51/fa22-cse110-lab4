@@ -8,5 +8,9 @@ NOTE: This is a variable that's declared in the for loop, but since it has funct
 
 3) Printed 150. Same concept of scope and loop as Q2, but finalPrice is different from discountedPrice. While discountedPrice has the discount applied, finalPrice takes that value and rounds it to the nearest penny.
 
-4) This function will return an array of all the prices with the discount applied to them (and rounded to the nearest cent). 
+4) [ 50, 100, 150 ] This function will return an array of all the prices with the discount applied to them (and rounded to the nearest cent). 
 NOTE: discounted.push(finalPrice) just appends final Price to the end of the array
+
+
+5)ERROR: i is not defined.
+ Because we are now using the block-scoped let declaration. The scope of i is now bounded to within the for loop. So it's out of bound now.
