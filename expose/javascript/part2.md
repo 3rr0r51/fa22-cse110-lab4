@@ -31,30 +31,30 @@ Again, same concept as Q5, discountedPrice is now block-scoped so using it in li
 
 Now onto discounted. The part that doesn't change is its REFERENCE to the array object. (References are kinda like pointers). We can edit the object itself, but we can't edit the variable's reference to it.  For example, if we did disounted = [];  on line 5, this wouldn't work because we're giving it a new reference.
 
-12).
-    A) student.name
-    B) student["Grad Year"]
-    C) student.greeting();
-    D) student["Favorite Teacher"]["name"]     or   student["Favorite Teacher"].name
-    E) student.courseLoad[0]
+12)\
+    A) student.name\
+    B) student["Grad Year"]\
+    C) student.greeting();\
+    D) student["Favorite Teacher"]["name"]     or   student["Favorite Teacher"].name\
+    E) student.courseLoad[0]\
 
-13).
-    A) "32"   concatenates, not add
-    B) 1     just subtracts
-    C) 3    null converts to 0
-    D) 3null null converts to string
-    E) 4    true converts to 1
-    F) 0    I think both gets converted to 0, and then add to 0
-    G) 3undefined   Undefined gets converted to a string for concatenation
-    H) NaN  Looks like undef can't be converted to a number (for subtraction) so it outputs Not a Number
+13)\
+    A) "32"   concatenates, not add\
+    B) 1     just subtracts\
+    C) 3    null converts to 0\
+    D) 3null null converts to string\
+    E) 4    true converts to 1\
+    F) 0    I think both gets converted to 0, and then add to 0\
+    G) 3undefined   Undefined gets converted to a string for concatenation\
+    H) NaN  Looks like undef can't be converted to a number (for subtraction) so it outputs Not a \Number
 
-14).
-    A) true    compares number
-    B) false   it compares lexographical order. In this case, the '1' in '12' is less than '2' so false
-    C) true     compares number
-    D) false    explanation on 15
-    E) false    maps true to 1 and compares 1 == 2
-    F) true     Honestly, not sure about this one
+14)\
+    A) true    compares number\
+    B) false   it compares lexographical order. In this case, the '1' in '12' is less than '2' so false\
+    C) true     compares number\
+    D) false    explanation on 15\
+    E) false    maps true to 1 and compares 1 == 2\
+    F) true     Honestly, not sure about this one\
 
 15) === is a strict comparison. It similar to ==, except for the fact that it also compares the type of both sides (so == tries to convert values into something comparable, === will return false if the typing is different)
 
