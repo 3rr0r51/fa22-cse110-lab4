@@ -30,3 +30,20 @@ Again, same concept as Q5, discountedPrice is now block-scoped so using it in li
 11) Yes, but because we modified the code from previous versions. The important part here is that that array (discounted) is somehow allowed to change despite being a const. Everything else works as normal. (We took out finalPrice because that wouldn't work). Note that line 7 isn't affected when we switched to const because its final value is defined there at the same time(line?) as its declaration. After the for loop ends, we delete it and create a new one for the next loop. This effectively circumnavigates the "no edit" rule.
 
 Now onto discounted. The part that doesn't change is its REFERENCE to the array object. (References are kinda like pointers). We can edit the object itself, but we can't edit the variable's reference to it.  For example, if we did disounted = [];  on line 5, this wouldn't work because we're giving it a new reference.
+
+12).
+    A) student.name
+    B) student["Grad Year"]
+    C) student.greeting();
+    D) student["Favorite Teacher"]["name"]     or   student["Favorite Teacher"].name
+    E) student.courseLoad[0]
+
+13).
+    A) "32"   concatenates, not add
+    B) 1     just subtracts
+    C) 3    null converts to 0
+    D) 3null null converts to string
+    E) 4    true converts to 1
+    F) 0    I think both gets converted to 0, and then add to 0
+    G) 3undefined   Undefined gets converted to a string
+    H) NaN  Looks like undef can't be converted to a number (for subtraction) so it outputs Not a Number
