@@ -45,5 +45,15 @@ Now onto discounted. The part that doesn't change is its REFERENCE to the array 
     D) 3null null converts to string
     E) 4    true converts to 1
     F) 0    I think both gets converted to 0, and then add to 0
-    G) 3undefined   Undefined gets converted to a string
+    G) 3undefined   Undefined gets converted to a string for concatenation
     H) NaN  Looks like undef can't be converted to a number (for subtraction) so it outputs Not a Number
+
+14).
+    A) true    compares number
+    B) false   it compares lexographical order. In this case, the '1' in '12' is less than '2' so false
+    C) true     compares number
+    D) false    explanation on 15
+    E) false    maps true to 1 and compares 1 == 2
+    F) true     Honestly, not sure about this one
+
+15) === is a strict comparison. It similar to ==, except for the fact that it also compares the type of both sides (so == tries to convert values into something comparable, === will return false if the typing is different)
