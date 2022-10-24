@@ -57,3 +57,8 @@ Now onto discounted. The part that doesn't change is its REFERENCE to the array 
     F) true     Honestly, not sure about this one
 
 15) === is a strict comparison. It similar to ==, except for the fact that it also compares the type of both sides (so == tries to convert values into something comparable, === will return false if the typing is different)
+
+16) Check .js file
+
+17) [ 2, 4, 6 ]    TLDR; It should double each value.
+modifyArray returns an new array where each value in the old array is fed into the callback function and its corresponding output is put into the new array. And since our callback function is just multiply by 2, it should just double everything in the old array.
